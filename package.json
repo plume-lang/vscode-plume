@@ -1,0 +1,31 @@
+{
+  "name": "plume-lang",
+  "displayName": "Plume",
+  "description": "Plume language Visual Studio Code extension",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "icon": "assets/logo.png",
+  "files": [],
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "plume",
+      "aliases": ["Plume", "plume"],
+      "extensions": [".plm"],
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "assets/file-light.svg",
+        "dark": "assets/file-dark.svg"
+      }
+    }],
+    "grammars": [{
+      "language": "plume",
+      "scopeName": "source.plume",
+      "path": "./syntaxes/plume.tmLanguage.json"
+    }]
+  }
+}

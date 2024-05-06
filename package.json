@@ -1,7 +1,8 @@
 {
   "name": "plume-lang",
-  "displayName": "Plume",
+  "displayName": "Plume Syntax Highlighting",
   "description": "Plume language Visual Studio Code extension",
+  "publisher": "plume-lang",
   "repository": {
     "type": "git",
     "url": "https://github.com/plume-lang/vscode-plume"

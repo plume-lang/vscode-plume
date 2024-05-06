@@ -2,6 +2,10 @@
   "name": "plume-lang",
   "displayName": "Plume",
   "description": "Plume language Visual Studio Code extension",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/plume-lang/vscode-plume"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.89.0"

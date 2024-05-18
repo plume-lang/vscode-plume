@@ -20,6 +20,9 @@
     {
       "include": "#identifiers"
     },
+    {
+      "include": "#interpolated"
+    },
 		{
 			"include": "#strings"
 		},
@@ -139,6 +142,23 @@
 				}
 			]
 		},
+
+    "interpolated": {
+      "name": "string.quoted.double.plume",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.plume",
+          "match": "\\\\."
+        },
+        {
+          "name": "variable.other.readwrite.plume",
+          "match": "\\$[a-zA-Z_][a-zA-Z0-9_]*"
+        }
+      ]
+    },
+
     "numbers": {
       "name": "constant.numeric.plume",
       "match": "\\b(\\d+(\\.\\d+)?|\\.\\d+)\\b"

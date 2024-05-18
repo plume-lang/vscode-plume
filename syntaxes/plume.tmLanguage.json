@@ -38,10 +38,16 @@
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.plume",
-				"match": "\\b(in|if|else|require|switch|fn|case|return|extend|native|type|infix|prefix|postfix|infixl|infixr|mut|extends|interface)\\b"
-			}]
+			"patterns": [
+        {
+          "name": "keyword.control.plume",
+          "match": "\\b(in|if|else|require|switch|fn|case|return|extend|native|type|infix|prefix|postfix|infixl|infixr|mut|extends|interface)\\b"
+        },
+        {
+          "name": "keyword.operator.plume",
+          "match": "\\b(and|or|not|is|as|=>|:|\\.\\.|\\.|->)\\b"
+        }
+      ]
 		},
 
     "functions": {

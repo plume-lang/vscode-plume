@@ -59,22 +59,7 @@
     "natives": {
       "patterns": [
         {
-          "match": "\\b(native)\\s+(\".*?\")\\s+([a-zA-Z_][a-zA-Z0-9_]*)",
-          "comment": "Native function definition",
-          "captures": {
-            "1": {
-              "name": "keyword.control.plume"
-            },
-            "2": {
-              "name": "string.quoted.double.plume"
-            },
-            "3": {
-              "name": "entity.name.function.plume"
-            }
-          }
-        },
-        {
-          "begin": "\\b(native)\\s+(\".*?\")\\s*{",
+          "begin": "\\b(native)\\s*(\".*?\")\\s*{\\b",
           "end": "}",
 
           "patterns": [
@@ -94,6 +79,21 @@
               "name": "keyword.control.plume"
             },
             "2": {
+              "name": "entity.name.function.plume"
+            }
+          }
+        },
+        {
+          "match": "\\b(native)\\s+(\".*?\")\\s+([a-zA-Z_][a-zA-Z0-9_]*)",
+          "comment": "Native function definition",
+          "captures": {
+            "1": {
+              "name": "keyword.control.plume"
+            },
+            "2": {
+              "name": "string.quoted.double.plume"
+            },
+            "3": {
               "name": "entity.name.function.plume"
             }
           }

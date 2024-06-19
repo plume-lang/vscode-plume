@@ -47,7 +47,7 @@
 			"patterns": [
         {
           "name": "keyword.control.plume",
-          "match": "\\b(in|if|else|require|switch|fn|case|return|extend|native|type|infix|prefix|postfix|infixl|infixr|mut|extends|interface|await)\\b"
+          "match": "\\b(in|if|else|require|switch|fn|case|return|extend|native|type|infix|prefix|postfix|infixl|infixr|mut|extends|interface|await|pub|async)\\b"
         },
         {
           "name": "keyword.operator.plume",
